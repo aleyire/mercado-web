@@ -8,7 +8,7 @@ app.listen(3000, () => {
 
 app.use("/css", express.static(__dirname + "/node_modules/bootstrap/dist/css"))
 app.use("/js", express.static(__dirname + "/node_modules/bootstrap/dist/js"))
-app.use("/img", express.static(__dirname + "/views/img"))
+app.use("/img", express.static(__dirname + "/public/img"))
 
 app.set("view engine", "handlebars")
 
