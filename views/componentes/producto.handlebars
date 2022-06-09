@@ -1,20 +1,22 @@
 {{#each productos}}
-  <div class="card" style="width: 18rem;">
-    <img src="./img/{{this}}.png" class="card-img-top" alt="..." />
-    <div class="card-body">
-      <h5 class="card-title">{{this}}</h5>
-      <button id="carrito" type="button" class="btn btn-outline-secondary">Añadir al carro de compras</button>
+  <div class="float-md-start text-center col-sm-12">
+    <div class="card" style="width: 18rem;">
+      <img src="/img/{{this}}.png" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">{{this}}</h5>
+        <button
+          id="carrito"
+          type="button"
+          class="btn btn-outline-secondary"
+        >Añadir al carro de compras</button>
+      </div>
     </div>
   </div>
 {{/each}}
 
 <script>
-  const comprar = [] 
-  const carrito = document.querySelector('#carrito')
-  carrito.forEach((boton) => { 
-    boton.addEventListener('click', (b) => {
-      b.preventDefault() // falta agregar el nombre del producto al carrito
-      comprar.push()
-    }) 
-  })
+  const comprar = [] const carrito = document.querySelector('#carrito')
+  carrito.forEach((boton) => { boton.addEventListener('click', (b) => {
+  b.preventDefault() // falta agregar el nombre del producto al carrito
+  comprar.push() }) })
 </script>

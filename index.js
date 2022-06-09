@@ -6,9 +6,9 @@ app.listen(3000, () => {
   console.log("Server on")
 })
 
-app.use("/css", express.static(__dirname + "./node_modules/bootstrap/dist/css"))
-app.use("/js", express.static(__dirname + "./node_modules/bootstrap/dist/js"))
-app.use("/", express.static(__dirname + "./views/img"))
+app.use("/css", express.static(__dirname + "/node_modules/bootstrap/dist/css"))
+app.use("/js", express.static(__dirname + "/node_modules/bootstrap/dist/js"))
+app.use("/img", express.static(__dirname + "/views/img"))
 
 app.set("view engine", "handlebars")
 
