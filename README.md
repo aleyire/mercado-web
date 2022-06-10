@@ -10,7 +10,7 @@ En este desafío se construyó un servidor con Express que utiliza el motor de p
 - Helpers
 - Devolviendo un sitio web de contenido dinámico
 
-### Pasos
+### Instalar con npm
 
 - npm init
 - npm i express
