@@ -1,9 +1,17 @@
 const agregarCarrito = document.querySelector("#agregar-carrito")
-const modalCerrar = document.querySelector("#modal-cerrar") // es la equis
-const btnCerrar = document.querySelector("#btn-cerrar") // boton de abajo
-const nombre = document.querySelector("#nombre")//falta
-const btnNavbar = document.querySelector("#btn-navbar")// enlazar con el carrito de compras
+const modal = document.querySelector(".modal")
+const btnCerrar = document.querySelector("#btn-cerrar")
 const comprar = []
 
+agregarCarrito.addEventListener("click", (e) => {
+    e.preventDefault()
+    const producto = {
+        nombre: nombre.value,
+    }
+    comprar.push(producto)
+    console.log(comprar)
+})   
 
-
+btnCerrar.addEventListener("click", () => {
+    modal.classList.add("oculto")
+})

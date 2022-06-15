@@ -26,8 +26,3 @@ app.get("/", (req, res) => {
     productos: ["banana", "cebollas", "lechuga", "papas", "pimenton", "tomate"],
   })
 })
-
-
-/*app.get("/", (req, res) => {
-  res.render("menu", { layout: "menu" })
-})*/
